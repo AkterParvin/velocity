@@ -1,6 +1,6 @@
 const Nav1 = () => {
   return (
-    <div className="bg-[#171e3c] sticky -top-1 z-50">
+    <div className="bg-[#171e3c] ">
       <div className="max-w-7xl mx-auto flex items-center justify-between h-10 ">
         <span>
           <h1 className="text-sm font-bold text-white">
