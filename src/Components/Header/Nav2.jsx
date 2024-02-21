@@ -45,9 +45,9 @@ const Nav2 = () => {
   };
 
   return (
-    <div className="bg-white px-5 md:px-10 pb-5">
+    <div className="bg-white px-5 md:px-10 border-b">
       <nav className="text-black flex justify-between ">
-        <div className="flex items-center md:gap-10 py-3">
+        <div className="flex items-center md:gap-10">
           <div
             onClick={() => setOpen(true)}
             className={`z-[999]  ${
@@ -118,20 +118,22 @@ const Nav2 = () => {
               <p className="py-52">hello ami aise </p>
             </ul>
           </div>
+
+
           <div>
            <img src="/public/logo.svg" alt="" />
           </div>
-          <ul className="max-md:hidden flex items-center gap-1 py-2">
+          <ul className="max-md:hidden flex items-center gap-1">
             {menuLinks?.map((menu, i) => (
               <li
                 key={i}
-                className="px-6 py-5 relative hover:border-b-4 hover:border-b-black"
+                className="px-6 py-8 relative hover:border-b-4 hover:border-b-black"
                 onMouseEnter={() => handleMouseEnter(i)}
                 onMouseLeave={handleMouseLeave}
               >
                 <a href={menu?.link}>{menu?.name}</a>
                 {menu.submenu && openIndex === i && (
-                  <ul className="absolute top-[70px] left-0 grid  grid-cols-2 gap-x-10 px-10 py-5 bg-white text-lg font-medium text-black  shadow-xl w-[500px]">
+                  <ul className="absolute top-24 left-0 grid  grid-cols-2 gap-x-10 px-10 py-5 bg-white text-lg font-medium text-black  shadow-xl w-[500px]">
                     {menu.submenu.map((item, index) => (
                       <li key={index} className="py-3">
                         <a href="#">{item}</a>
@@ -145,11 +147,11 @@ const Nav2 = () => {
         </div>
         <div className="flex items-center gap-8 md:gap-10">
           <div className=" max-md:hidden flex items-center gap-6 px-5 rounded-md bg-gray-100 hover:border hover:border-black">
-            <CiSearch size={20} className=" " />
+            <CiSearch size={20}/>
             <p className=" py-3 text-neutral-500 rounded-md text-sm font-semibold text-center">
               search product here
             </p>
-            <CiCamera size={20} className="" />
+            <CiCamera size={20}  />
           </div>
           <LuArrowLeftRight size={20} />
           <SlHandbag size={20} />
