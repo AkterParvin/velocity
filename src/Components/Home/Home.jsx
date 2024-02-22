@@ -2,6 +2,7 @@ import Collections from "../Collections";
 import NewBoldCollections from "../NewBoldCollections";
 import NewCollections from "../NewCollections";
 import OurSupport from "../OurSupport";
+import ProductSlide from "../ProductSlide/ProductSlide";
 
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
         <div >
            <Collections/>
            <NewCollections/>
+           <ProductSlide/>
            <NewBoldCollections/>
            <OurSupport/>
         </div>
