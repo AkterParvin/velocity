@@ -147,7 +147,7 @@ const Nav2 = () => {
                 >
                   <a href={menu?.link}>{menu?.name}</a>
                   {menu.submenu && openIndex === i && (
-                    <ul className="absolute top-24 left-0 grid  grid-cols-2 gap-x-10 px-10 py-5 bg-white text-lg font-medium text-black  shadow-xl w-[500px]">
+                    <ul className="absolute top-24 left-0 grid  grid-cols-2 gap-x-10 px-10 py-5 bg-white text-lg font-medium text-black  shadow-xl w-[500px] z-10">
                       {menu.submenu.map((item, index) => (
                         <li key={index} className="py-3">
                           <a href="#">{item}</a>
