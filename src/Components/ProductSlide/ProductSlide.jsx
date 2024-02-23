@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Container from "../Shared/Container";
-
+import "swiper/css";
 // product images
 import product1 from "../../assets/Products/product1.png";
 import product2 from "../../assets/Products/product2.png";
