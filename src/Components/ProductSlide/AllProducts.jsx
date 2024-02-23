@@ -66,7 +66,7 @@ const Products = [
   },
 ];
 
-const ProductSlide = () => {
+const AllProducts = () => {
   // Add to cart button
   const [visible, setVisible] = useState(0);
 
@@ -95,7 +95,7 @@ const ProductSlide = () => {
         {/* slider control button and title */}
         <div className="flex items-center justify-between py-10">
           <h3 className="text-3xl text-black font-Playfair font-bold">
-            New Products
+            All Products
           </h3>
           <div className="flex items-center text-3xl gap-5 text-black font-Playfair">
             <BsArrowLeft
@@ -159,4 +159,4 @@ const ProductSlide = () => {
   );
 };
 
-export default ProductSlide;
+export default AllProducts;

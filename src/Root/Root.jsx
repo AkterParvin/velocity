@@ -7,15 +7,12 @@ import Footer from "../Components/Footer/Footer";
 
 const Root = () => {
   return (
-    <div className="bg-[#F7F7FA] ">
+    <div className="bg-[#ffff] ">
       <Nav1 />
-      <Nav2/>
+      <Nav2 />
       <Banner />
-
-      <div className="max-w-screen-2xl mx-auto">
-        <Outlet />
-      </div>
-      <Footer/>
+      <Outlet />
+      <Footer />
     </div>
   );
 };
