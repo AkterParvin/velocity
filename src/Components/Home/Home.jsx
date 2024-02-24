@@ -15,7 +15,6 @@ const Home = () => {
       <NewCollections />
       <AllProducts/>
       <NewBoldCollections />
-
       <OurSupport />
     </div>
   );
